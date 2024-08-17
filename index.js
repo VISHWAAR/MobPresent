@@ -6,8 +6,9 @@ const server = express.createServer((req,res)=>{
     else if (req.url=="/GET"){
         console.log("GET")
     }
+    res.end("Hello World");
     
 })
 server.listen(8080,()=>{
-    console.log("Server kumbudren sami");
+    console.log("Site is running on port 8080");
 })
